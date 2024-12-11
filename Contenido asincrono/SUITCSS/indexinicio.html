@@ -1,59 +1,76 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mosaico de fotos</title>
-    <link rel="stylesheet" href="stylesinicio.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contenido asíncrono</title>
+  <link rel="stylesheet" href="stylesinicio.css">
 </head>
-<body>
-    <header class="header">
-        <div class="header__logo">
-            <img class="header__logo-image" src="Fotos/Logo-dark.png" alt="Logo">
-        </div>
-        <nav class="header__menu menu">
-            <a href="#" class="menu__item">MAIN</a>
-            <a href="#" class="menu__item">ABOUT</a>
-            <a href="#" class="menu__item">CONTACT</a>
-        </nav>
-    </header>
+<body class="body">
+  <header class="header header--main">
+    <h1 class="header__title">STKLM</h1>
+    <nav class="header__nav">
+      <a href="#" class="header__link">All Prints</a>
+      <a href="#" class="header__link">About Us</a>
+      <a href="#" class="header__link">Contact</a>
+    </nav>
+  </header>
 
-    <main class="main">
-        <div class="main__mosaic mosaic">
-            <img src="Fotos/1.jpg" alt="Imagen 1" class="mosaic__item mosaic__item--1">
-            <img src="Fotos/2.jpg" alt="Imagen 2" class="mosaic__item mosaic__item--2">
-            <img src="Fotos/3.jpg" alt="Imagen 3" class="mosaic__item mosaic__item--3">
-            <img src="Fotos/4.jpg" alt="Imagen 4" class="mosaic__item mosaic__item--4">
-            <img src="Fotos/5.jpg" alt="Imagen 5" class="mosaic__item mosaic__item--5">
-            <img src="Fotos/6.jpg" alt="Imagen 6" class="mosaic__item mosaic__item--6">
-            <img src="Fotos/7.jpg" alt="Imagen 7" class="mosaic__item mosaic__item--7">
-            <img src="Fotos/8.jpg" alt="Imagen 8" class="mosaic__item mosaic__item--8">
-            <img src="Fotos/9.jpg" alt="Imagen 9" class="mosaic__item mosaic__item--9">
-            <img src="Fotos/10.jpg" alt="Imagen 10" class="mosaic__item mosaic__item--10">
-            <img src="Fotos/11.jpg" alt="Imagen 11" class="mosaic__item mosaic__item--11">
-            <img src="Fotos/12.jpg" alt="Imagen 12" class="mosaic__item mosaic__item--12">
-            <img src="Fotos/13.jpg" alt="Imagen 13" class="mosaic__item mosaic__item--13">
-            <img src="Fotos/14.jpg" alt="Imagen 14" class="mosaic__item mosaic__item--14">
-            <img src="Fotos/15.jpg" alt="Imagen 15" class="mosaic__item mosaic__item--15">
-            <img src="Fotos/16.jpg" alt="Imagen 16" class="mosaic__item mosaic__item--16">
-            <img src="Fotos/17.jpg" alt="Imagen 17" class="mosaic__item mosaic__item--17">
-            <img src="Fotos/18.jpg" alt="Imagen 18" class="mosaic__item mosaic__item--18">
-            <img src="Fotos/19.jpg" alt="Imagen 19" class="mosaic__item mosaic__item--19">
-            <img src="Fotos/20.jpg" alt="Imagen 20" class="mosaic__item mosaic__item--20">
-            <img src="Fotos/21.jpg" alt="Imagen 21" class="mosaic__item mosaic__item--21">
+  <main class="main">
+    <section class="gallery">
+      <p class="gallery__intro">
+        Check out some of the stuff we have worked on with and work spanning across several different mediums including digital prints, company branding &amp; more
+      </p>
+      <div class="gallery__grid">
+        <div class="gallery__item">
+          <img src="Fotos/print-port-1.jpg" alt="Print 1" class="gallery__image">
         </div>
-
-        <div class="main__content content">
-            <h1 class="content__title">Stockholm</h1>
-            <p class="content__text">
-                Aliquam lorem ante, dapibus in, viverra quis, elit feugiat.
-                Etiam sit tellus. Phasellus rutrum nulla ut metus varius laoreet amet orci.
-            </p>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-2.jpg" alt="Print 2" class="gallery__image">
         </div>
-    </main>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-3.jpg" alt="Print 3" class="gallery__image">
+        </div>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-4.jpg" alt="Print 4" class="gallery__image">
+        </div>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-5-1.jpg" alt="Print 5" class="gallery__image">
+        </div>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-6.jpg" alt="Print 6" class="gallery__image">
+        </div>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-8.jpg" alt="Print 8" class="gallery__image">
+        </div>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-9.jpg" alt="Print 9" class="gallery__image">
+        </div>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-10.jpg" alt="Print 10" class="gallery__image">
+        </div>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-11.jpg" alt="Print 11" class="gallery__image">
+        </div>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-12.jpg" alt="Print 12" class="gallery__image">
+        </div>
+        <div class="gallery__item">
+          <img src="Fotos/print-port-13.jpg" alt="Print 13" class="gallery__image">
+        </div>
+      </div>
+      <a href="#" class="gallery__more">Show more</a>
+    </section>
+  </main>
 
-    <footer class="footer">
-        <p class="footer__copyright">&copy;2021 Qode Interactive, All Rights Reserved</p>
-    </footer>
+  <footer class="footer">
+    <p class="footer__text">All rights reserved &copy; Code Interactive 2020</p>
+    <nav class="footer__nav">
+      <a href="#" class="footer__link">Instagram</a>
+      <a href="#" class="footer__link">Facebook</a>
+      <a href="#" class="footer__link">Behance</a>
+      <a href="#" class="footer__link">Pinterest</a>
+    </nav>
+  </footer>
 </body>
 </html>
