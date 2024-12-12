@@ -1,16 +1,16 @@
-const bloques = document.querySelectorAll('.bloque');
-const titulos = document.querySelectorAll('.h2');
+const acordeon = document.querySelector('.acordeon');
 
-titulos.forEach((titulo, i) => {
-    titulo.addEventListener('click', () => {
-        
-        const bloque = bloques[i];
+acordeon.addEventListener('click', (event) => {
+    
+    if (event.target.matches('.h2')) {
+        const titulo = event.target;
+        const bloque = titulo.parentElement; 
         const esActivo = bloque.classList.contains('activo');
 
-        bloques.forEach(b => b.classList.remove('activo'));
+        acordeon.querySelectorAll('.bloque').forEach(b => b.classList.remove('activo'));
 
         if (!esActivo) {
             bloque.classList.add('activo');
         }
-    });
+    }
 });
