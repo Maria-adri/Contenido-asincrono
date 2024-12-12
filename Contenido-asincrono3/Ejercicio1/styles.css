@@ -1,0 +1,69 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9af1f1; 
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.acordeon {
+    background-color: #003636; 
+    padding: 2em;
+    width: 90%;
+    max-width: 50em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Cada bloque */
+.acordeon .bloque {
+    background-color: #005f5f; 
+    margin: 0 0 1em;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.acordeon .bloque:hover {
+    background-color: #008080;
+    transform: scale(1.02); 
+}
+
+
+.acordeon .h2 {
+    background-color: #037979;
+    margin: 0;
+    padding: 1em;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.acordeon .h2:hover {
+    background-color: #009999; 
+}
+
+
+.acordeon .contenido {
+    background-color: #9af1f1; 
+    padding: 0 1em;
+    height: 0;
+    opacity: 0;
+    color: #037979;
+    font-weight:bold;
+    transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+
+.acordeon .bloque.activo .contenido {
+    height: auto;
+    opacity: 1; 
+    padding: 1em; 
+}
