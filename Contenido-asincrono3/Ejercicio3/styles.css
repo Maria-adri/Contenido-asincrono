@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f0fc; /* Fondo claro en tono lila */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #e8def8;
+    width: 90%;
+    max-width: 800px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    background-color: #d0bdf4; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor .li {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    background-color: #c8a2f5; 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.contenedor .li:hover {
+    background-color: #a673e7;
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .li.activo {
+    background-color: #7e57c2;
+    color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor .subcontenedor {
+    position: relative;
+    min-height: 15vh;
+    background-color: #e0c3fc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor .bloque {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 100%;
+    max-width: 95%; 
+    padding: 1rem;
+    background-color: #b388ff; 
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+   
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4; 
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.contenedor .bloque.activo {
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 1;
+    background-color: #9575cd;
+}

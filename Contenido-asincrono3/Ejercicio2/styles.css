@@ -1,10 +1,94 @@
-body{
+body {
     min-height: 100vh;
-    font-size:100%;
     font-family: 'Courier New', Courier, monospace;
-    color:black;
-    line-height: 1.4em;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
 }
 
- 
+.grid {
+    width: 90%;
+    max-width: 900px;
+    background-color: rgb(221, 159, 77);
+    padding: 2rem; 
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    gap: 2rem; 
+}
 
+.grid img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover; 
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+}
+
+.grid img:active {
+    transform: scale(0.95);
+}
+
+.lightbox {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    padding: 1rem;
+}
+
+.lightbox.isActive {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightbox .close {
+    width: 3rem;
+    height: 3rem; 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.lightbox .close:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox .close:active {
+    transform: scale(0.9);
+}
+
+.lightbox .grande {
+    width: 80%; 
+    max-width: 800px;
+    height: auto;
+    max-height: 70vh;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 1rem; 
+}
