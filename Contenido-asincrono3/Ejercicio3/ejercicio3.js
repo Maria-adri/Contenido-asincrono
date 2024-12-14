@@ -1,15 +1,11 @@
-const li = document.querySelectorAll('.li')
-const bloque = document.querySelectorAll('.bloque')
+const botones = document.querySelectorAll('.li');
+const bloques = document.querySelectorAll('.bloque');
 
-li.forEach( ( cadaLi , i )=>{
-    li[i].addEventListener('click',()=> {
-
-        li.forEach ( (cadaLi , i)=>{
-            li[i].classList.remove('activo')
-            bloque[i].classList.remove('activo')
-        })
-
-        li[i].classList.add('activo')
-        bloque[i].classList.add('activo')
-    })
-})
+botones.forEach((boton, indice) => {
+    boton.addEventListener('click', () => {
+        botones.forEach(b => b.classList.remove('activo'));
+        bloques.forEach(b => b.classList.remove('activo'));
+        boton.classList.add('activo');
+        bloques[indice].classList.add('activo');
+    });
+});

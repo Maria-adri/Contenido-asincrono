@@ -1,16 +1,21 @@
-const imgList = document.querySelectorAll('.img');
+const imagenes = document.querySelectorAll('.img');
 const lightbox = document.querySelector('.lightbox');
-const grande = document.querySelector('.grande');
-const closeBtn = document.querySelector('.close');
+const imagenGrande = document.querySelector('.grande');
+const botonCerrar = document.querySelector('.close');
 
-
-const closeLightbox = () => lightbox.classList.remove('isActive');
-
-
-const showImage = (src) => {
-    grande.src = src;
+const mostrarLightbox = (src) => {
     lightbox.classList.add('isActive');
+    imagenGrande.src = src;
 };
 
-imgList.forEach(img => img.addEventListener('click', () => showImage(img.src)));
-closeBtn.addEventListener('click', closeLightbox);
+const cerrarLightbox = () => {
+    lightbox.classList.remove('isActive');
+};
+
+imagenes.forEach((img) => {
+    img.addEventListener('click', () => {
+        mostrarLightbox(img.src);
+    });
+});
+
+botonCerrar.addEventListener('click', cerrarLightbox);
