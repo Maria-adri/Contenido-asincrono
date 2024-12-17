@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    
     background-color: #000; 
     color: #fff;
     overflow: hidden;
@@ -19,7 +18,7 @@ body {
 .brand-list {
     position: relative;
     height: 100%;
-    width:50%;
+    width: 50%;
     flex-wrap: wrap;
     padding-top: 40vh;
     padding-right: 25vh;
@@ -39,7 +38,7 @@ body {
     opacity: 0.6; 
     margin-left: 10px;
     transition: opacity 0.3s ease;
-     font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .brand-list li:hover .sub-title {
@@ -53,9 +52,8 @@ body {
     font-weight: 700;
     transition: all 0.3s ease;
     margin: 1rem;
-    display:inline-block;
-    text-align:center;
-    
+    display: inline-block;
+    text-align: center;
 }
 
 .brand-list li:hover {
@@ -74,7 +72,6 @@ body {
     opacity: 0.2; 
 }
 
-
 .brand-display {
     position: absolute;
     top: 0;
@@ -92,4 +89,55 @@ body {
 
 .brand-display.active {
     opacity: 1;
+}
+
+
+@media (max-width: 1440px) {
+    .brand-list {
+        width: 60%;
+        padding-right: 20vh;
+    }
+    .brand-list li {
+        font-size: 2.5rem;
+        margin: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .brand-list {
+        width: 70%;
+        padding-right: 15vh;
+        padding-top: 30vh;
+    }
+    .brand-list li {
+        font-size: 2rem;
+        margin: 0.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-list {
+        width: 80%;
+        padding-right: 10vh;
+        padding-top: 20vh;
+    }
+    .brand-list li {
+        font-size: 1.8rem;
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-list {
+        width: 90%;
+        padding-right: 5vh;
+        padding-top: 10vh;
+    }
+    .brand-list li {
+        font-size: 1.6rem;
+        margin: 0.4rem;
+    }
+    .brand-list li:hover {
+        font-size: 2rem;
+    }
 }
