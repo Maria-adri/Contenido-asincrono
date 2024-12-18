@@ -37,7 +37,7 @@ body {
     color: #fff; 
     opacity: 0.6; 
     margin-left: 10px;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -50,7 +50,7 @@ body {
     cursor: pointer;
     color: #fff; 
     font-weight: 700;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     margin: 1rem;
     display: inline-block;
     text-align: center;
@@ -69,7 +69,7 @@ body {
 }
 
 .brand-list li.inactive {
-    opacity: 0.2; 
+    opacity: 0.5; 
 }
 
 .brand-display {
@@ -78,14 +78,15 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
     background-color: black;
-    transition: background-image 1s ease, opacity 1s ease; 
-    opacity: 0; 
+    transition: background-image 1.5s ease-in-out, opacity 1s ease; 
+    opacity: 0;
     z-index: -1;
     filter: brightness(75%);
 }
+
 
 .brand-display.active {
     opacity: 1;

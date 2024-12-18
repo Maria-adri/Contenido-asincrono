@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/Contenido-asincrono4/index.html"
+    "livePreview.defaultPreviewPath": "/Contenido-asincrono4/index.html",
+    "liveServer.settings.port": 5501
 }
